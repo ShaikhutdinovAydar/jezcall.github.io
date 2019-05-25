@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f5f5dc;
+  font-family: 'Comfortaa', cursive;
+}
+.img {
+  width: 100%;
+  height: 445px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.main-menu {
+  background-color: #1c1c1c;
+  color: #ff033e;
+  padding: 10px;
+}
+.header_image {
+  height: 100vh;
+  background-image: url(http://www.fotooboi.ru/upload/iblock/c65/c656c1ff5b3abb4ddbf356a1f9d060d7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.name_of_company {
+  font-size: 40px;
+  font-family: 'Paytone One', sans-serif;
+}
+.about_company {
+  color: #ff033e;
+  margin-top: 30%;
+  display: block;
+}
+.about_company h1 {
+  font-size: 26px;
+  font-weight: 900;
+}
+.about_company span {
+  font-size: 20px;
+  font-weight: 300;
+}
+.k_menu {
+  width: 50px;
+  height: 50px;
+}
+.all_things {
+  margin-top: 20%;
+}
+.things_img h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.things_img li {
+  text-align: center;
+  line-height: 35px;
+}
+.things_1 {
+  margin: 60px 0;
+}
+.things_2 {
+  margin: 60px 0;
+}
+.also {
+  margin: 60px 0;
+}
+.img_of_hody {
+  background-image: url(http://ae01.alicdn.com/kf/HTB1XQlbfloHL1JjSZFwq6z6vpXaq.jpg?size=342288&height=800&width=800&hash=88fa0b6d4caa856a48539f2e5425c31e);
+}
+.img_of_trausers {
+  background-image: url(https://cdn.cliqueinc.com/cache/posts/277563/emma-louise-connolly-277563-1550512407409-product.700x0c.jpg);
+}
+.img-of-kepka {
+  background-image: url(https://ae01.alicdn.com/kf/HTB1eb00MpXXXXXNXpXXq6xXFXXX2/Wholesale-2016-Famous-Brand-Unisex-Hat-Cap-Casual-Outdoor-Baseball-Snapback-Hats-High-Quality-Hip-Hop.jpg);
+}
+.img_of_t-shirt {
+  background-image: url(https://s.kaskus.id/images/fjb/2016/10/29/jual_aneka_kaos_import_murah_163816_1477720730.jpg);
+}
+.img_of_jeans {
+  background-image: url(https://cdn.lookastic.ru/черные-рваные-зауженные-джинсы/зауженные-джинсы-original-6698152.jpg);
+}
+.img_of_sneakers {
+  background-image: url(http://3.bp.blogspot.com/_G6W-R7ywhFw/TJd5bTfYcxI/AAAAAAAABRY/D-kcbIdwo8U/s1600/joe_3_chelsea_kirchoff.jpg);
+}
+.img_of_socks {
+  background-image: url(https://nusho.com.ua/photos/elem/f/374.jpg);
+}
+.about_us {
+  background-color: #1c1c1c;
+  color: #ff033e;
+  padding: 10px;
+  padding: 30px;
+  border-radius: 30px;
+}
