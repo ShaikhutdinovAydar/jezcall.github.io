@@ -634,9 +634,19 @@ body {
   .main-navbar .navbar-col {
     height: 80px;
   }
+  .main-navbar .navbar-col .navbar-brand {
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 40px;
+  }
+  .bg-img {
+    height: 550px;
+  }
   .first-list {
     margin-top: 50px;
-    height: 40.5vh;
+    height: 290.135px;
   }
   .first-list .about-first {
     width: 100%;
@@ -664,10 +674,10 @@ body {
     text-align: center;
   }
   .bg-img-2 {
-    height: 195vh;
+    height: 1330px;
   }
   .bg-img-2 .main-bg-2 {
-    height: 100vh;
+    height: 667px;
   }
   .bg-img-2 .our-services {
     margin-top: 0px;
@@ -700,10 +710,10 @@ body {
     font-size: 12px;
   }
   .bg-img-3 {
-    height: 195vh;
+    height: 1330px;
   }
   .bg-img-3 .main-bg-3 {
-    height: 195vh;
+    height: 1330px;
   }
   .bg-img-3 .who-we-are span {
     font-size: 40px;
@@ -736,16 +746,17 @@ body {
   .bg-img-3 .about-team .social-networks {
     text-align: center;
     padding: 0;
+    margin: 0;
   }
   .bg-img-3 .about-team .social-networks li {
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
   }
   .bg-img-4 {
-    height: 166vh;
+    height: 1130px;
   }
   .bg-img-4 .main-bg-4 {
-    height: 195vh;
+    height: 1300px;
   }
   .bg-img-4 .our-work span {
     font-size: 40px;
@@ -766,10 +777,10 @@ body {
     margin-bottom: 20px;
   }
   .bg-img-5 {
-    height: 195vh;
+    height: 1330px;
   }
   .bg-img-5 .main-bg-5 {
-    height: 100vh;
+    height: 667px;
   }
   .bg-img-5 .about-address {
     margin-top: 30px;
