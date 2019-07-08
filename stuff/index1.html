@@ -395,16 +395,18 @@
           </div>
           <div class=" col-md-6 for-user col-xs-12">
             <div class="row inputs">
+            <form action="stuff\mail.php" method="POST">
               <div class="col-md-6 col-xs-6">
-                <input required type="text" class='left' placeholder="Name"></div>
-              <div class="col-md-6 col-xs-6"><input type="text" required placeholder='Surname'></div>
+                <input required type="text" class='left' placeholder="Name" name='user_name'></div>
+              <div class="col-md-6 col-xs-6"><input type="text" name='user_surname' required placeholder='Surname'></div>
             </div>
             <div class="row area">
-              <div class="col-md-12 col-xs-12"><textarea required placeholder="Your question"></textarea></div>
+              <div class="col-md-12 col-xs-12"><textarea name='user_review' required placeholder="Your question"></textarea></div>
             </div>
             <div class="row button">
-              <div class="col-md-12 col-xs-12"><button id='button'>Send</button></div>
+              <div class="col-md-12 col-xs-12"><button id='button' type="submit">Send</button></div>
             </div>
+          </form>
           </div>
         </div>
       </div>

@@ -823,19 +823,29 @@ body {
 }
 @media (min-width: 992px) {
   .bg-img {
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
   }
   .bg-img-2 {
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
   }
   .bg-img-3 {
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
+  }
+  .bg-img-3 .main-bg-3 {
+    min-height: 100vh;
   }
   .bg-img-4 {
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 5vh;
+    min-height: 100vh;
   }
   .bg-img-5 {
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 5vh;
+    min-height: 100vh;
   }
 }
 @media (max-width: 550px) {
@@ -854,6 +864,21 @@ body {
   }
   .main-navbar {
     height: 80px;
+  }
+  .main-navbar .nav-item,
+  .main-navbar .nav-item-2,
+  .main-navbar .nav-item-3,
+  .main-navbar .nav-item-4,
+  .main-navbar .nav-item-5 {
+    width: 10rem;
+  }
+  .main-navbar .nav-item a,
+  .main-navbar .nav-item-2 a,
+  .main-navbar .nav-item-3 a,
+  .main-navbar .nav-item-4 a,
+  .main-navbar .nav-item-5 a {
+    font-size: 2rem;
+    padding: 0;
   }
   .main-navbar .nav-item-2:focus,
   .main-navbar .nav-item-2:hover {
@@ -943,7 +968,6 @@ body {
   }
   .bg-img-3 {
     height: calc(105%);
-    padding-bottom: 5rem;
   }
   .bg-img-3 .about-who-we-are {
     margin-top: 3.75rem;

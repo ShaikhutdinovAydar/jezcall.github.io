@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Damion|Lateef&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @main-color: #ffffff;
+@import url('stuff/css/bootstrap.css');
 
 body {
   background-color: transparent;
@@ -1017,23 +1018,33 @@ body {
 
 @media (min-width: 992px) {
   .bg-img {
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh
   }
 
   .bg-img-2 {
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
   }
 
   .bg-img-3 {
-    height: 100vh;
+    .main-bg-3 {
+      min-height: 100vh;
+    }
+    height: 100%;
+    min-height: 100vh;
   }
 
   .bg-img-4 {
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 5vh;
+    min-height: 100vh;
   }
 
   .bg-img-5 {
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 5vh;
+    min-height: 100vh;
   }
 }
 
@@ -1045,7 +1056,6 @@ body {
   .navbar-brand {
     text-align: center;
   }
-
   .name-of-temates {
     font-size: 1rem;
   }
@@ -1058,7 +1068,13 @@ body {
 
   .main-navbar {
     height: 80px;
-
+    .nav-item, .nav-item-2, .nav-item-3, .nav-item-4, .nav-item-5 {
+      width: 10rem;
+      a {
+        font-size: 2rem;
+        padding: 0;
+      }
+    }
     .nav-item-2:focus,
     .nav-item-2:hover {
       border-radius: 10px;
@@ -1171,7 +1187,6 @@ body {
 
   .bg-img-3 {
     height: calc(100% + 5rem);
-    padding-bottom: 5rem;
 
     .about-who-we-are {
       margin-top: 3.75rem;
@@ -1336,4 +1351,8 @@ body {
       width: 5rem;
     }
   }
+}
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+  font-size: 50%;
 }
