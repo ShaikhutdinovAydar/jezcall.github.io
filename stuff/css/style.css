@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Damion|Lateef&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('stuff/css/bootstrap.css');
 body {
   background-color: transparent;
   box-sizing: border-box;
