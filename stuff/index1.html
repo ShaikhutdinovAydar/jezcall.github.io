@@ -22,10 +22,16 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animation.css">
   <script src='js/wow.min.js'></script>
-  <script>new WOW().init();</script>
+  <script>
+    new WOW().init();
+  </script>
 </head>
 
 <body>
+  <!-- made a page-preloader -->
+  <div id='preloader' class="preloader">
+    <div class="loader"></div>
+  </div>
   <!-- -------------------------------------------------->
   <a id='Home'></a>
   <div class="section bg-img">
@@ -171,7 +177,8 @@
           <div class="col-md-12 text-center col-xs-12 wow fadeInUp"><span>Who we are & what we do</span></div>
         </div>
         <div class="row about-who-we-are">
-          <div class="col-md-12 text-center col-xs-12 wow fadeInUp"><span>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt
+          <div class="col-md-12 text-center col-xs-12 wow fadeInUp"><span>Cras suscipit porttitor porttitor. Morbi sit
+              amet tincidunt
               sapien.
               Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et,
               ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet
@@ -397,21 +404,21 @@
             <img src="img\map.png" alt="">
           </div>
           <form action="check.php" target='_blank' method="POST" class='wow fadeInUp'>
-          <div class=" col-md-6 for-user col-xs-12">
-            <div class="row inputs">
-              <div class="col-md-6 col-xs-6">
-                <input required type="text" class='left' placeholder="Name" name='user_name'></div>
-              <div class="col-md-6 col-xs-6"><input type="text" name='user_surname' required placeholder='Surname'>
+            <div class=" col-md-6 for-user col-xs-12">
+              <div class="row inputs">
+                <div class="col-md-6 col-xs-6">
+                  <input required type="text" class='left' placeholder="Name" name='user_name'></div>
+                <div class="col-md-6 col-xs-6"><input type="text" name='user_surname' required placeholder='Surname'>
+                </div>
+              </div>
+              <div class="row area">
+                <div class="col-md-12 col-xs-12"><textarea type='text' name='user_review' required
+                    placeholder="Your question"></textarea></div>
+              </div>
+              <div class="row button">
+                <div class="col-md-12 col-xs-12"><button id='button' type="submit">Send</button></div>
               </div>
             </div>
-            <div class="row area">
-              <div class="col-md-12 col-xs-12"><textarea type='text' name='user_review' required
-                  placeholder="Your question"></textarea></div>
-            </div>
-            <div class="row button">
-              <div class="col-md-12 col-xs-12"><button id='button' type="submit">Send</button></div>
-            </div>
-          </div>
           </form>
         </div>
       </div>
@@ -449,7 +456,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+    <script src='js/preloader.js'></script>
 </body>
 
 </html>
