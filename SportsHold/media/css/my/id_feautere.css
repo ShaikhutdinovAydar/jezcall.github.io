@@ -1,0 +1,20 @@
+.id__block .id__block-body .id__block-wrapper .imgClone {
+  width: 49%;
+}
+.id__block .id__block-body .id__block-wrapper .imgClone img {
+  width: 100%;
+}
+.id__block .id__block-body .id__block-wrapper .span_content {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .id__block .id__block-body .id__block-wrapper .imgClone {
+    width: 100%;
+  }
+  .id__block .id__block-body .id__block-wrapper .imgClone img {
+    width: 100%;
+  }
+  .id__block .id__block-body .id__block-wrapper .span_content {
+    width: 100%;
+  }
+}

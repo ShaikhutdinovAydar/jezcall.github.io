@@ -1,0 +1,678 @@
+body {
+  box-sizing: border-box;
+}
+
+ul,
+li,
+i {
+  padding: 0;
+  margin: 0;
+}
+
+@text-color: #fff;
+
+:root {
+  font-size: 10px;
+}
+
+.bg-nav {
+  height: 50px;
+  background-color: #472424;
+  padding: 0;
+}
+
+.header {
+  height: 5rem;
+
+  .wrap {
+    height: inherit;
+    width: 100%;
+    display: table;
+
+    .wrap-block {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  .main-nav {
+    height: 3.5rem;
+
+    .navbar-items {
+      height: 100%;
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-items {
+        margin-right: 3rem;
+
+        .nav-link {
+          font-family: "Trueno Lt", sans-serif;
+          color: @text-color;
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 26px;
+        }
+
+
+
+        display: inline-block;
+      }
+
+      .nav-items:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .log-bar {
+      height: 100%;
+
+      .content {
+        float: right;
+
+        .balance {
+          height: inherit;
+        }
+
+        .balance img {
+          height: 2.5rem;
+        }
+      }
+
+      .log-items {
+        .nav-link {
+          font-family: "Trueno Lt", sans-serif;
+          color: @text-color;
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 26px;
+          margin-right: 4rem;
+        }
+
+        .nav-link:last-child {
+          margin-right: 0;
+        }
+
+        display: inline-block;
+      }
+
+      .log-in {
+        border-left: 1px solid #563636;
+        padding-right: 10px;
+        padding-left: 10px;
+        ;
+      }
+
+      .registr {
+        border-radius: 5px;
+        background-color: #ff7373;
+      }
+    }
+  }
+}
+
+.bg-main-nav {
+  background-color: #572c2c;
+  padding: 0;
+
+  .main-header {
+    height: 9rem;
+
+    .wrap {
+      display: table;
+      width: 100%;
+      height: 100%;
+
+      .wrap-block {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+
+    .nav {
+      .logo {
+        img {
+          padding-left: 1rem;
+        }
+      }
+
+      .nav-gg {
+        .content {
+          float: right;
+
+          .classification {
+            display: inline-block;
+            margin-right: 4rem;
+
+            a {
+              color: @text-color;
+              font-family: "Trueno Lt", sans-serif;
+              font-size: 1.6rem;
+              font-weight: 400;
+              line-height: 2.6rem;
+            }
+          }
+
+          .classification:last-child {
+            margin-right: 0;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.section {
+  height: 100%;
+  margin-bottom: 500px;
+
+  .img-sneak {
+    position: absolute;
+    left: -99px;
+    top: 86px;
+    width: 900px;
+    transform: translate(0, 0);
+    transition: all 1s ease-in-out;
+  }
+
+  .img-sneak:hover {
+    transform: translate(-150px, 0);
+    transition: all 1s ease-in-out;
+  }
+}
+
+.bg-header-content {
+  height: 580px;
+  background-color: #f0efee;
+
+  .header-content {
+    height: 100%;
+    width: 100%;
+
+    .wrap {
+      display: table;
+      width: 100%;
+      height: 100%;
+
+      .wrap-block {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .joins {
+    h3 {
+      margin: 0;
+      color: #623232;
+      font-family: "Trueno Lt", sans-serif;
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    h1 {
+      color: #623232;
+      font-family: "Trueno Ult Blk", sans-serif;
+      font-size: 70px;
+      font-weight: 400;
+    }
+
+    strong {
+      color: #ff7373;
+      font-family: "Trueno Ult Blk", sans-serif;
+      font-size: 50px;
+      font-weight: 400;
+    }
+
+    span {
+      display: block;
+      color: #8a8784;
+      font-family: "Trueno Lt";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+    }
+
+    button {
+      margin-top: 3.7rem;
+      background-color: #ff7373;
+      border: none;
+      width: 25.5rem;
+      height: 4.8rem;
+      color: @text-color;
+      font-family: "Trueno Bd", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.6rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.prevu-sneakers {
+  margin-top: 50px;
+
+  .prevu-row {
+    width: 100%;
+
+    .one-img {
+      padding-left: 0;
+      width: 100%;
+
+      img {
+        position: absolute;
+        width: 100%;
+      }
+
+      h3 {
+        margin-top: 4.4rem;
+        position: relative;
+        color: @text-color;
+        font-family: "Trueno Lt", sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+
+        strong {
+          font-weight: 400;
+          color: #4bd8cd;
+          font-family: "Trueno Bd", sans-serif;
+        }
+
+      }
+
+      button {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        width: 211px;
+        height: 48px;
+        border: none;
+        background-color: #4bd8cd;
+        margin-top: 58%;
+        color: #000000;
+        font-family: "Trueno Bd", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        text-transform: uppercase;
+        position: relative;
+      }
+    }
+
+    .lot-of-img {
+
+      .one,
+      .two {
+        height: 255px;
+      }
+
+      .one {
+        height: 277px;
+        padding-left: 0;
+        top: -22px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+        }
+
+        h3 {
+          color: @text-color;
+          font-family: "Trueno Lt", sans-serif;
+          font-size: 3rem;
+          font-weight: 300;
+
+          strong {
+            font-family: "Trueno Bd", sans-serif;
+          }
+
+          margin-top: 8.2rem;
+          margin-left: 35%;
+          position: relative;
+        }
+
+        button {
+          margin-top: 30px;
+          margin-left: 55%;
+          border: none;
+          width: 145px;
+          height: 48px;
+          background-color: #623232;
+          position: relative;
+          color: @text-color;
+          font-family: "Trueno Bd", sans-serif;
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 26px;
+          text-transform: uppercase;
+        }
+      }
+
+      .two {
+        height: 255px;
+        margin-top: 8px;
+        padding: 0;
+        padding-left: 15px;
+
+        .row {
+          height: 100%;
+          margin-right: 0;
+          margin-left: 0;
+        }
+
+        img {
+          position: absolute;
+          width: 100%;
+        }
+
+        h3 {
+
+          position: relative;
+        }
+
+        .therth {
+          height: 100%;
+          max-width: calc(47.8%);
+          padding: 0;
+          margin: 0 4.4% 0 0;
+          background: url(../img/header/thert-sneakers.png) no-repeat;
+          background-size: cover;
+
+          h3 {
+            margin-top: 56%;
+            color: @text-color;
+            font-family: "Trueno Lt", sans-serif;
+            font-size: 3rem;
+            font-weight: 400;
+          }
+
+
+          strong {
+            color: #ff7373;
+            font-family: "Trueno Bd", sans-serif;
+          }
+
+        }
+
+        .four {
+          height: 100%;
+          max-width: calc(47.8%);
+          padding: 0;
+          background: url(../img/header/four-sneakers.png);
+
+          h3 {
+            margin-top: 20%;
+            font-size: 3rem;
+            font-weight: 400;
+            color: #6b7072;
+            font-family: "Trueno Lt", sans-serif;
+          }
+
+          strong {
+            color: @text-color;
+            font-family: "Trueno Bd", sans-serif;
+          }
+
+        }
+      }
+    }
+  }
+
+  .different {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      a {
+        color: #bdb9b5;
+        font-family: "Trueno Lt", sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-right: 4rem;
+
+        li {
+          display: inline-block;
+
+        }
+
+      }
+
+      .tututu {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+
+// оформление секции с преимуществами
+
+.slider {
+  margin-bottom: 10rem;
+
+  .features-block {
+    box-sizing: border-box;
+    margin-bottom: 3rem;
+    max-height: 400px;
+    display: inline-block;
+
+    .content {
+      height: 100%;
+      border: 1px solid #e0dfde;
+      box-shadow: 1px 5px 5px #ff7373;
+      padding: 0 10%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    a {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+  p {
+    display: inline-block;
+    margin-top: 12%;
+    margin-bottom: 0;
+    position: relative;
+    color: #ff7373;
+    font-family: "Trueno Lt", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+
+    /* Text style for "$60.00" */
+    strong {
+      height: 2rem;
+      display: block;
+      color: #8a8784;
+      font-size: 16px;
+      text-decoration: line-through;
+    }
+  }
+
+  span {
+    padding: 2px;
+    text-align: center;
+    width: 6.1rem;
+    height: 2.8rem;
+    background-color: #ff7373;
+    margin-top: 12%;
+    margin-right: -15px;
+    float: right;
+    position: relative;
+    color: @text-color;
+    font-family: "Trueno Bd", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+  }
+
+  h3 {
+    margin-bottom: 0;
+    position: relative;
+    color: #8a8784;
+    font-family: "Trueno Lt", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    /* Text style for "MEN" */
+    font-family: "Trueno Bd", sans-serif;
+    padding-bottom: 7%;
+
+    /* Text style for "Converse B" */
+    strong {
+      font-family: "Trueno Lt", sans-serif;
+    }
+
+    /* Text style for "#16378271" */
+    i {
+      color: #bdb9b5;
+    }
+  }
+
+}
+
+.slid-firms {
+  .slick-initialized {
+    display: none;
+  }
+
+  .slick-active {
+    outline: none;
+  }
+
+  img {
+    height: 60px;
+    width: 100px;
+    margin: 0 25%;
+  }
+
+  .prev {
+    position: absolute;
+    top: 25%;
+    left: -6%;
+    transform: scaleY(-50%);
+    height: 40px;
+    width: 40px;
+    background: url(../img/carousel/120003_arrows_512x512.png) center no-repeat;
+    background-size: 70%;
+    z-index: 99;
+    border: none;
+  }
+
+  .next {
+    position: absolute;
+    top: 25%;
+    right: -6%;
+    transform: scaleY(-50%);
+    height: 40px;
+    width: 40px;
+    background: url(../img/carousel/next_arrow_pointer_point-512.png) center no-repeat;
+    background-size: 70%;
+    z-index: 99;
+    border: none;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  .slick-initialized {
+    display: none;
+  }
+}
+
+.basket {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000050;
+  z-index: 130;
+
+  &-body {
+    position: relative;
+    margin: auto;
+    width: 1024px;
+    min-height: 200px;
+    max-height: 640px;
+    background-color: #fff;
+    padding: 25px;
+    overflow: auto;
+    border-radius: 3px;
+  }
+
+  &-title {
+    font-size: 28px;
+    color: #4d5f71
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px 0;
+    border: 1px solid #4d5f713f;
+    border-radius: 3px;
+    padding: 20px;
+
+    #cart-empty {
+      font-size: 24px;
+      color: #4d5f71
+    }
+
+    .features-block {
+      width: 33%;
+
+      @media (max-width: 992px) {
+        width: 50%;
+      }
+
+      @media (max-width: 768px) {
+        width: 70%;
+      }
+    }
+  }
+
+  &-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+  }
+
+  &-total {
+    font-size: 18px;
+
+    span {
+      color: #077c24;
+    }
+  }
+
+  .btn {
+    display: block;
+    margin-left: auto;
+  }
+
+}
+
+@import url(adaptive.less);
