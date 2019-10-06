@@ -1,0 +1,442 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  .bg-nav-mobile {
+    display: none;
+  }
+  .foooter {
+    height: 110px;
+  }
+  .log-in {
+    width: 85px;
+  }
+  .registr {
+    margin-left: 15px;
+  }
+  .exit {
+    margin-left: 15px;
+  }
+  .linkks {
+    height: 405px;
+  }
+}
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .linkks {
+    height: 405px;
+  }
+  .foooter {
+    height: 110px;
+  }
+  .prevu-sneakers .prevu-row .one-img {
+    height: 450px;
+  }
+  .prevu-sneakers .prevu-row .one-img button {
+    margin-top: 50%;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img {
+    height: 468px;
+    vertical-align: top;
+    transform: translate(0%, -3.5%);
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .one {
+    height: 210px;
+    position: static;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .one button {
+    margin-top: 1%;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two {
+    height: 233px;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two .therth {
+    height: 100%;
+    background-position: center;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two .four {
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  .bg-nav-mobile {
+    display: none;
+  }
+  .registr {
+    margin-left: 15px;
+  }
+  .log-in {
+    width: 85px;
+  }
+  .exit {
+    margin-left: 15px;
+  }
+  :root {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 991px) {
+  :root {
+    font-size: 9px;
+  }
+  .foooter {
+    height: 110px;
+  }
+  .linkks {
+    height: 405px;
+  }
+  .com {
+    height: 100%;
+  }
+  .com .pluses-comments .comentstors {
+    padding-top: 70px;
+  }
+  .com .pluses-comments .coments {
+    height: auto;
+  }
+  .com .pluses-comments .coments .rectangle {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background-position: center;
+    margin-bottom: 50px;
+  }
+  .img-sneak {
+    display: none;
+  }
+  .bg-nav {
+    display: none;
+  }
+  .main-header {
+    display: none;
+  }
+  .help h3 {
+    padding-left: 30px;
+  }
+  .bg-nav-mobile {
+    height: 100%;
+    background-color: #572c2c;
+    padding: 0;
+  }
+  .bg-nav-mobile .header {
+    height: inherit;
+  }
+  .bg-nav-mobile .header .nav {
+    height: 100%;
+  }
+  .bg-nav-mobile .header .logo {
+    height: 9rem;
+    width: 80%;
+    padding-left: 15px;
+  }
+  .bg-nav-mobile .header #burg {
+    width: 20%;
+    padding-right: 15px;
+  }
+  .bg-nav-mobile .header #burg img {
+    margin-top: 20px;
+    height: 40px;
+    float: right;
+  }
+  .bg-nav-mobile .header .all {
+    display: block;
+    height: 300px;
+    z-index: 100;
+  }
+  .bg-nav-mobile .header .all .navbar-items .nav-items {
+    background-color: #472424;
+    border-radius: 10px;
+    width: 47%;
+    margin-right: 5%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .bg-nav-mobile .header .all .navbar-items .nav-items a {
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .bg-nav-mobile .header .all .navbar-items .nav-items:nth-child(even) {
+    margin-right: 0;
+  }
+  .bg-nav-mobile .header .all .log-bar {
+    display: block;
+    text-align: center;
+    margin-top: 35px;
+  }
+  .bg-nav-mobile .header .all .log-bar .log-items {
+    display: inline-block;
+    line-height: 35px;
+  }
+  .bg-nav-mobile .header .all .log-bar .log-in {
+    font-size: 18px;
+    padding: 5px 30px;
+  }
+  .bg-nav-mobile .header .all .log-bar .log-in a {
+    color: #FFF;
+  }
+  .bg-nav-mobile .header .all .log-bar .nav-link {
+    padding: 0;
+    display: inline-block;
+  }
+  .bg-nav-mobile .header .all .log-bar .registr {
+    display: block;
+    font-size: 18px;
+    margin-left: 0;
+  }
+  .bg-nav-mobile .header .all .log-bar .registr a {
+    color: #fff;
+  }
+  .prevu-sneakers .prevu-row .one-img img {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .help {
+    padding: 40px;
+    height: 100%;
+  }
+  .help .wrapper .wrapper-block h3 {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .help .wrapper .wrapper-block h3 span {
+    width: 100%;
+    text-align: center;
+  }
+  .help .wrapper .wrapper-block .wrapper .wrapper-block {
+    text-align: center;
+  }
+  .help .wrapper .wrapper-block .wrapper .wrapper-block button {
+    margin-top: 30px;
+    float: none;
+  }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  :root {
+    font-size: 9px;
+  }
+  .prevu-sneakers .prevu-row .one-img {
+    height: 350px;
+  }
+  .prevu-sneakers .prevu-row .one-img button {
+    margin-top: 43%;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img {
+    height: 364px;
+    vertical-align: top;
+    transform: translate(0%, -3.5%);
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .one {
+    width: 100%;
+    height: 160px;
+    position: static;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .one h3 {
+    margin-top: 17%;
+    font-size: 20px;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .one button {
+    height: 30px;
+    margin-left: 0;
+    transform: translate(125%, 0%);
+    width: 120px;
+    margin-top: 1%;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two {
+    padding-left: 4px;
+    height: 188px;
+    margin-top: 14px;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two .therth {
+    height: 100%;
+    background-position: center;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two .therth h3 {
+    font-size: 20px;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two .four {
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two .four h3 {
+    font-size: 20px;
+  }
+  :root {
+    font-size: 9px;
+  }
+  .features-block {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .features-block img {
+    max-width: 100%;
+    box-sizing: content-box;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  :root {
+    font-size: 8px;
+  }
+  .features-block {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .features-block img {
+    box-sizing: content-box;
+    width: calc(100%);
+  }
+  .prevu-sneakers .prevu-row {
+    left: -10px;
+    height: 100%;
+  }
+  .prevu-sneakers .prevu-row .one-img {
+    width: 100%;
+    height: 450px;
+  }
+  .prevu-sneakers .prevu-row .one-img button {
+    margin-top: 50%;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img {
+    padding-top: 25px;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    transform: translate(0%, -3.5%);
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .one {
+    width: 100%;
+    position: static;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .one h3 {
+    margin-top: 15%;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .one button {
+    height: 30px;
+    margin-left: 56%;
+    width: 120px;
+    margin-top: 3%;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two {
+    margin-top: 14px;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two .therth {
+    height: 100%;
+    background-position: center;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two .four {
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  .latest-news .text {
+    margin-bottom: 0;
+  }
+  .latest-news .cards .crd img {
+    margin-top: 50px;
+  }
+  .about-us {
+    height: auto;
+  }
+  .linkks {
+    height: auto;
+  }
+  .linkks .wrapper .wrapper-block .alls {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .linkks .wrapper .wrapper-block .alls .navigation,
+  .linkks .wrapper .wrapper-block .alls .categories,
+  .linkks .wrapper .wrapper-block .alls .sales,
+  .linkks .wrapper .wrapper-block .alls .support {
+    margin-top: 30px;
+    width: 50%;
+    display: inline-block;
+  }
+  .foooter {
+    height: auto;
+  }
+  .foooter .row {
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: "h" "c" "f";
+  }
+  .foooter .log {
+    grid-area: f;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .foooter .by_how {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-area: c;
+  }
+  .foooter .social {
+    grid-area: h;
+  }
+  .foooter .social .social-img {
+    margin-bottom: 10px;
+    float: none;
+  }
+}
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  :root {
+    font-size: 8px;
+  }
+  .features-block {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .prevu-sneakers .prevu-row {
+    height: 100%;
+  }
+  .prevu-sneakers .prevu-row .one-img {
+    width: 100%;
+    height: 400px;
+  }
+  .prevu-sneakers .prevu-row .one-img button {
+    margin-top: 50%;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img {
+    padding-top: 25px;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .one {
+    width: 100%;
+    height: 200px;
+    position: static;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .one h3 {
+    margin-top: 10%;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .one button {
+    height: 30px;
+    margin-left: 53%;
+    width: 120px;
+    margin-top: 3%;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two {
+    padding-left: 4px;
+    height: 200px;
+    margin-top: 14px;
+    margin-left: 6px;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two .therth {
+    height: 100%;
+    background-position: center;
+  }
+  .prevu-sneakers .prevu-row .lot-of-img .two .four {
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+}
