@@ -1,0 +1,401 @@
+@font-face {
+  font-family: 'Petrona';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Petrona Regular'), local('Petrona-Regular'), url(https://fonts.gstatic.com/s/petrona/v8/mtG64_NXL7bZo9XXsXU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Petrona';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Petrona Regular'), local('Petrona-Regular'), url(https://fonts.gstatic.com/s/petrona/v8/mtG64_NXL7bZo9XXsXU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animateScrollBar 5s linear infinite;
+}
+@keyframes animateScrollBar {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
+}
+#progressbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+}
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/stuff/bg.png) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.header {
+  color: #fffafa;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+.header .logo {
+  font-family: Petrona;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  display: flex;
+  align-items: flex-end;
+}
+.header .nav-bar {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+}
+.header .menu-nav {
+  display: flex;
+  width: 100%;
+}
+.header .contacts,
+.header .about-me,
+.header .portfolio {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+}
+.header a {
+  outline: none;
+  color: #fffafa;
+  text-decoration: none;
+}
+.header .contacts {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.main {
+  margin: 200px 150px;
+  color: #fffafa;
+}
+.main .hello {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  text-transform: uppercase;
+}
+.main .my-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  display: flex;
+  align-items: flex-end;
+}
+.main .who-i-am {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+.main .button {
+  overflow: hidden;
+  margin-top: 50px;
+  background: linear-gradient(90deg, #8b00ff, #f441a5, #f441a5, #8b00ff);
+  background-size: 300%;
+  border-radius: 2px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+.main .button {
+  position: relative;
+}
+.main .button span {
+  position: absolute;
+  overflow: hidden;
+  background: #ffff00;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: anim 1s linear infinite;
+}
+@keyframes anim {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0.1;
+  }
+}
+.main .button {
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+.main .social {
+  margin-top: 30px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .social img {
+  width: 48px;
+}
+.movie {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.movie img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.first:hover,
+.second:hover {
+  animation: 2s spin infinite linear;
+}
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.header {
+  box-sizing: border-box;
+  margin: 0 100px;
+}
+.header .logo {
+  font-size: 26px;
+}
+.header .nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+.header .nav-bar .menu-nav {
+  align-items: center;
+  transition: 0.5s;
+  transform-origin: right center;
+  transform: scaleX(0) translateX(20%);
+  opacity: 0;
+}
+.header .nav-bar .menu-nav_active {
+  transform: scaleX(1) translateX(0%);
+  opacity: 1;
+}
+.header .nav-bar .menu-nav__link {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 30px;
+}
+.header .nav-bar .menu-btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translateX(-10px);
+  border-radius: 50%;
+  position: relative;
+}
+.header .nav-bar .menu-btn span,
+.header .nav-bar .menu-btn span::before,
+.header .nav-bar .menu-btn span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -1px;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+.header .nav-bar .menu-btn span::before,
+.header .nav-bar .menu-btn span::after {
+  content: '';
+  display: block;
+  transition: 0.5s;
+}
+.header .nav-bar .menu-btn span::before {
+  transform: translateY(-5px);
+}
+.header .nav-bar .menu-btn span::after {
+  transform: translateY(5px);
+}
+.header .nav-bar .menu-btn_active span {
+  height: 0;
+}
+.header .nav-bar .menu-btn_active span::before {
+  transform: rotate(45deg);
+}
+.header .nav-bar .menu-btn_active span::after {
+  transform: rotate(-45deg);
+}
+.header .about-me,
+.header .contacts,
+.header .portfolio {
+  font-size: 16px;
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .header .nav-bar {
+    width: 300px;
+  }
+  .header .about-me,
+  .header .contacts,
+  .header .portfolio {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .bg {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/stuff/rain-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .header {
+    margin: 0 50px;
+  }
+  .header .nav-bar {
+    width: 250px;
+  }
+  .header .nav-bar .menu-nav__link {
+    margin-right: 10px;
+  }
+  .header .about-me,
+  .header .contacts,
+  .header .portfolio {
+    font-size: 14px;
+  }
+  .movie {
+    display: none;
+  }
+  .main {
+    margin: 0 50px;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .main .hello {
+    font-size: 18px;
+  }
+  .main .my-name {
+    font-size: 32px;
+  }
+  .main .who-i-am {
+    font-size: 20px;
+  }
+}

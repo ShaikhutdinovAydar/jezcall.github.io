@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/less/style.css">
+    <link rel="stylesheet" href="../static/less/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Sha.me - Portfolio</title>
+</head>
+
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <div class="bg">
+        <div class="container">
+            <div class="header">
+                <div class="logo">Sha.me</div>
+                <div class="nav-bar">
+                    <div class="menu-nav">
+                        <a target="_blank" href="#" class="menu-nav__link">
+                            <div class="about-me">About</div>
+                        </a>
+                        <a target="_blank" href="#" class="menu-nav__link">
+                            <div class="contacts">Contacts</div>
+                        </a>
+                        <a target="_blank" href="#" class="menu-nav__link">
+                            <div class="portfolio">Portfolio</div>
+                        </a>
+                        <a target="_blank" href="#" class="menu-nav__link">
+                            <div class="portfolio">Home</div>
+                        </a>
+                    </div>
+                    <div class="menu-btn">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="a-lot-of-blocks">
+                    <div class="blocks">
+                        <div class="img-with-name"><img src="../static/img/stuff/Elips1.png" alt="">
+                            <h3>High professionalism</h3>
+                        </div>
+
+                        <span>- Development of web sites, landing pages, business card sites, online stores, corporate
+                            sites.<br><br>- A large portfolio that allows you to evaluate the quality of your
+                            work.<br><br>-
+                            Special
+                            approach to each job</span>
+                    </div>
+                    <div class="blocks">
+                        <div class="img-with-name"><img src="../static/img/stuff/Elips2.png" alt="">
+                            <h3>Always in touch</h3>
+                        </div>
+
+                        <span>- I will respond at any time you can contact me by mail rijic03@gmail.com also in VK and
+                            Instagram.<br><br>- The maximum response time is 10-15 minutes.</span>
+                    </div>
+                    <div class="blocks">
+                        <div class="img-with-name"><img src="../static/img/stuff/Elips3.png" alt="">
+                            <h3>Short working hours</h3>
+                        </div>
+
+                        <span>- Crazy speed of work.Does not affect the quality of work.</span>
+                    </div>
+                    <div class="blocks">
+                        <div class="img-with-name"><img src="../static/img/stuff/Elips4.png" alt="">
+                            <h3>Very favourable price</h3>
+                        </div>
+
+                        <span>- The cost of creating a site depends on the complexity of the project.<br><br>- We offer
+                            discounts
+                            for posts about us on your instagram</span>
+                    </div>
+                </div>
+                <div class="block-with-carousel">
+                    <div class="block-of-main-carousel">
+                        <div class="one-block-sl"><img src="../static/img/carousel/sl1.png" alt=""></div>
+                        <div class="one-block-sl"><img src="../static/img/carousel/sl2.png" alt=""></div>
+                        <div class="one-block-sl"><img src="../static/img/carousel/sl3.png" alt=""></div>
+                        <div class="one-block-sl"><img src="../static/img/carousel/sl5.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../slick/slick.min.js"></script>
+        <script type="text/javascript">
+            const button = document.getElementById("button_of_hire");
+            button.addEventListener('click', function (e) {
+                let x = e.clientX - e.target.offsetLeft;
+                let y = e.clientY - e.target.offsetTop;
+
+                let repples = document.createElement('span');
+                repples.style.left = x + 'px';
+                repples.style.top = y + 'px';
+                this.appendChild(repples);
+                setTimeout(() => {
+                    repples.remove()
+                }, 1000);
+            });
+        </script>
+        <script type="text/javascript">
+            $('.block-of-main-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: true
+            });
+        </script>
+        <script>
+            $('.menu-btn').on('click', function (e) {
+                e.preventDefault;
+                $(this).toggleClass('menu-btn_active');
+                $('.menu-nav').toggleClass('menu-nav_active');
+            });
+        </script>
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let TotalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function () {
+                let progressHeight = (window.pageYOffset / TotalHeight) * 100;
+                progress.style.height = progressHeight + '%';
+            }
+        </script>
+
+</body>
+
+</html>

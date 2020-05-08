@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../static/less/style.css">
+   <title>Sha.me</title>
+</head>
+
+<body>
+   <div class="bg" style="overflow-y: hidden;">
+      <div class="movie"><img src="../static/img/stuff/movie_1.png" class="first" alt=""><img src="../static/img/stuff/movie_2.png" alt=""></div>
+      <div class="header">
+         <div class="logo">Sha.me</div>
+         <div class="nav-bar">
+            <div class="menu-nav">
+                <a target="_blank" href="#" class="menu-nav__link"><div class="about-me">About</div></a>
+                <a target="_blank" href="#" class="menu-nav__link"><div class="contacts">Contacts</div></a>
+                <a target="_blank" href="#" class="menu-nav__link"><div class="portfolio">Portfolio</div></a>
+                <a target="_blank" href="#" class="menu-nav__link"><div class="portfolio">Home</div></a>
+            </div>
+            <div class="menu-btn">
+                <span></span>
+            </div>
+        </div>
+      </div>
+      <div class="main">
+         <div class="hello">hello</div>
+         <div class="my-name">I am Aydar</div>
+         <div class="who-i-am">A Freelance Web-Developer \ Programmer</div>
+         <div class="button" type="submit" id="button_of_hire">hire me</div>
+         <div class="social">
+            <a target="_blank" href="https://vk.com/4d2cfb6fb45abc355f36f730502af96e"><div class="vk"><img src="../static/img/stuff/vk-icon.png" alt=""></div></a>
+            <a target="_blank" href=""><div class="instagram"><img src="../static/img/stuff/instagram-icon.png" alt=""></div></a>
+            <a target="_blank" href=""><div class="facebook"><img src="../static/img/stuff/facebook-icon.png" alt=""></div></a>
+         </div>
+      </div>
+
+      <!-- Scripts -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript">
+         const button = document.getElementById("button_of_hire");
+         button.addEventListener('click', function(e) {
+            let x = e.clientX - e.target.offsetLeft;
+            let y = e.clientY - e.target.offsetTop;
+
+            let repples = document.createElement('span');
+            repples.style.left = x + 'px';
+            repples.style.top = y + 'px';
+            this.appendChild(repples);
+            setTimeout(() => {
+               repples.remove()
+            }, 1000);
+         });
+      </script>
+      <script>
+         $('.menu-btn').on('click', function(e) {
+             e.preventDefault;
+             $(this).toggleClass('menu-btn_active');
+             $('.menu-nav').toggleClass('menu-nav_active');
+         });
+     </script>
+</body>
+
+</html>

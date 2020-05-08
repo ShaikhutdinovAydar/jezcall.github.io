@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;500;700&family=Salsa&display=swap');
+
+body {
+   box-sizing: border-box;
+}
+
+.bg {
+   width: 100vw;
+   height: 100%;
+   background: url(../img/stuff/rain-img.jpg) no-repeat;
+   background-size: cover;
+   background-position: bottom;
+}
+.header {
+   margin: 0;
+}
+.content {
+   width: 100%;
+   box-sizing: border-box;
+   margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+
+   .a-lot-of-blocks {
+      color: #fffafa;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   .blocks {
+      box-sizing: border-box;
+      padding: 25px 30px;
+      width: 260px;
+      border-radius: 10px;
+      min-height: 370px;
+      background-color: #111010;
+      margin-top: 40px;
+
+      .img-with-name {
+         margin-bottom: 20px;
+         display: flex;
+         align-items: center;
+
+         img {
+            width: 50px;
+         }
+
+         h3 {
+            font-family: Salsa;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            margin-left: 10px;
+         }
+      }
+
+      span {
+         display: block;
+         font-family: Rokkitt;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 18px;
+         line-height: 21px;
+      }
+   }
+
+   .block-with-carousel {
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      order: -1;
+
+      .block-of-main-carousel {
+         width: 100%;
+         height: 500px;
+         padding: 60px 100px;
+         border-radius: 10px;
+         background-color: #111010;
+
+         .one-block-sl {
+            margin-left: 40px;
+            height: 400px;
+
+            img {
+               padding: 0;
+               height: 100%;
+               object-fit: cover;
+               border-radius: 7px;
+            }
+         }
+         .one-block-sl:focus {
+            outline:none;
+         }
+
+         .slick-next::before {
+            content: "";
+         }
+
+         .slick-prev::before {
+            content: "";
+         }
+
+         .slick-next {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: url(../img/stuff/next-previous-img.png);
+            background-size: cover;
+            margin-right: 60px;
+            transition: 0.5s;
+            border-radius: 50%;
+         }
+
+         .slick-prev {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: url(../img/stuff/prev-img.png);
+            background-size: cover;
+            margin-left: 60px;
+            transition: 0.5s;
+            border-radius: 50%;
+         }
+         .slick-next:active, .slick-prev:active {
+            background-color: #fff;
+            
+         }
+      }
+   }
+}
+
+
+
+@media only screen and (max-device-width: 768px) and (min-device-width: 576px) {
+   .content {
+      padding: 0 100px;
+
+      .blocks {
+         margin-bottom: 40px;
+         min-height: 400px;
+         width: 250px;
+
+         .img-with-name {
+            img {
+               width: 30px;
+            }
+
+            h3 {
+               font-size: 16px;
+            }
+         }
+
+         span {
+            font-size: 16px;
+         }
+      }
+   }
+}
+
+@media only screen and (max-device-width: 921px) and (min-device-width: 768px) {
+   .content {
+      justify-content: center;
+      padding: 0 50px;
+
+      .a-lot-of-blocks {
+      }
+
+      .blocks {
+         margin-bottom: 40px;
+         width: 250px;
+      }
+
+      .block-with-carousel {
+         .block-of-main-carousel {  
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+
+            .one-block-sl {
+               height: 300px;
+
+               img {
+                  height: 100%;
+
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (max-device-width: 767px) {
+   .content {
+      justify-content: center;
+      padding: 0 50px;
+
+      .a-lot-of-blocks {   
+         justify-content: center;
+      }
+
+      .blocks {
+         margin-bottom: 40px;
+         width: 250px;
+      }
+
+      .block-with-carousel {
+         .block-of-main-carousel {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+
+            .one-block-sl {
+               height: 300px;
+
+               img {
+                  height: 100%;
+
+               }
+            }
+         }
+      }
+   }
+
+
+}
